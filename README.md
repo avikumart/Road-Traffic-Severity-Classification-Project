@@ -16,7 +16,7 @@ This is a multiclass classification project to classify severity of road acciden
 **2. Data preparation and pre-processing**
 - Missing Values Tretment using fillna method
 - One Hot encoding using pandas get_dummies
-- Feature selection using chi2 statistic and SelectKBest method
+- Feature selection using `chi2` statistic and SelectKBest method
 - PCA to reduce dimentinality
 - Imbalance data tretment using `SMOTENC` technique
 
