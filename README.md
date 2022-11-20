@@ -15,7 +15,7 @@ This is a multiclass classification project to classify severity of road acciden
 4. Evaluation
 
 
-### Acknowledgement: The machine learning company
+### Acknowledgement: [TMLC Academy](https://www.themlco.com/Academy/index.html)
 
 ### References:
 
