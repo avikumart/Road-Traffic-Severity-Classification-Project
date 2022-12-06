@@ -5,7 +5,7 @@ import streamlit as st
 import joblib
 
 model = joblib.load("rta_model_deploy3.joblib")
-encoder = joblib.load("ordinal_encoder.joblib")
+encoder = joblib.load("ordinal_encoder2.joblib")
 
 # 1: serious injury, 2: Slight injury, 0: Fatal Injury
 
@@ -63,13 +63,17 @@ def main():
 
 # encode using ordinal encoder and predict
        if submit:
-              input_array = np.array([No_vehicles,No_casualties,Hour,collision,
+              input_array = np.array([collision,
                                    Age_band,Sex,Education,service_vehicle,
                                    Day_week,Accident_area])
               
-              encoded_arr = encoder.transform(input_array)
+              encoded_arr = list(encoder.transform(input_array))
               
-              prediction = model.predict(encoded_arr)
+              num_arr = [No_vehicles,No_casualties,Hour]
+              pred_arr = num_arr + encoded_arr              
+           
+            
+              prediction = model.predict(pred_arr)
               
               if prediction == 0:
                      st.write(f"The severity prediction is Fatal Injury")
