@@ -77,6 +77,9 @@ def main():
                      st.write(f"The severity prediction is serious injury")
               else:
                      st.write(f"The severity prediciton is slight injury")
+                  
+if __name__ == '__main__':
+   main()
                      
               
 
