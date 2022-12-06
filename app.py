@@ -65,14 +65,13 @@ def main():
        if submit:
               input_array = np.array([collision,
                                    Age_band,Sex,Education,service_vehicle,
-                                   Day_week,Accident_area])
+                                   Day_week,Accident_area], ndmin=2)
               
-              encoded_arr = list(encoder.transform(input_array))
+              encoded_arr = list(encoder.transform(input_array).ravel())
               
               num_arr = [No_vehicles,No_casualties,Hour]
-              pred_arr = num_arr + encoded_arr              
-           
-            
+              pred_arr = np.array(num_arr + encoded_arr).reshape(1,-1)              
+          
               prediction = model.predict(pred_arr)
               
               if prediction == 0:
