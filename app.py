@@ -80,14 +80,13 @@ def main():
                      st.write(f"The severity prediction is serious injury")
               else:
                      st.write(f"The severity prediciton is slight injury")
-                  
+
+                 
 st.markdown("Please find GitHub repository link of project: [Here](https://github.com/avikumart/Road-Traffic-Severity-Classification-Project)")                  
                   
 if __name__ == '__main__':
    main()
     
-   st.markdown("Please find GitHub repository link of project: [Here](https://github.com/avikumart/Road-Traffic-Severity-Classification-Project)")                  
-
                      
               
 
