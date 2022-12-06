@@ -1,4 +1,5 @@
 pandas
 numpy
 streamlit
+sklearn
 joblib
