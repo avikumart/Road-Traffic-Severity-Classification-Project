@@ -3,7 +3,7 @@ import numpy as np
 import streamlit as st
 import joblib
 
-model = joblib.load("rta_model_deploy.joblib")
+model = joblib.load("rta_model_deploy3.joblib")
 encoder = joblib.load("ordinal_encoder.joblib")
 
 # 1: serious injury, 2: Slight injury, 0: Fatal Injury
