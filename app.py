@@ -82,7 +82,7 @@ def main():
                      st.write(f"The severity prediciton is slight injury")
 
 # post the image of the accident
-st.image("vllkyt19n98psusds8.jpg")
+st.image("vllkyt19n98psusds8.jpg", use_column_width=True)
 
 # description about the project and code files                  
 st.markdown("Please find GitHub repository link of project: [Here](https://github.com/avikumart/Road-Traffic-Severity-Classification-Project)")                  
