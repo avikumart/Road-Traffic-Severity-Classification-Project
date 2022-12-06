@@ -46,7 +46,7 @@ features = ['Number_of_vehicles_involved','Number_of_casualties','Hour_of_Day','
 st.markdown("<h1 style='text-align: center;'>Accident Severity Prediction App 🚧</h1>", unsafe_allow_html=True)
 def main():
        with st.form("road_traffic_severity_form"):
-              st.subheader("Enter the following inputs:")
+              st.subheader("Pleas enter the following inputs:")
               
               No_vehicles = st.slider("Number of vehicles involved:",1,7, value=0, format="%d")
               No_casualties = st.slider("Number of casualities:",1,8, value=0, format="%d")
@@ -80,6 +80,8 @@ def main():
                      st.write(f"The severity prediction is serious injury")
               else:
                      st.write(f"The severity prediciton is slight injury")
+                  
+st.markdown("Please find GitHub repository link: [Here](https://github.com/avikumart/Road-Traffic-Severity-Classification-Project)")                  
                   
 if __name__ == '__main__':
    main()
