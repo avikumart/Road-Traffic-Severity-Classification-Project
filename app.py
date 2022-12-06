@@ -81,7 +81,10 @@ def main():
               else:
                      st.write(f"The severity prediciton is slight injury")
 
-                 
+# post the image of the accident
+st.image(np.array("vllkyt19n98psusds8.jpg))
+
+# description about the project and code files                  
 st.markdown("Please find GitHub repository link of project: [Here](https://github.com/avikumart/Road-Traffic-Severity-Classification-Project)")                  
                   
 if __name__ == '__main__':
