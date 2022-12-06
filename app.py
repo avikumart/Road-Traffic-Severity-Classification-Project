@@ -75,7 +75,7 @@ def main():
               prediction = model.predict(pred_arr)
               
               if prediction == 0:
-                     st.write(f"The severity prediction is Fatal Injury")
+                     st.write(f"The severity prediction is Fatal Injury⚠")
               elif prediction == 1:
                      st.write(f"The severity prediction is serious injury")
               else:
