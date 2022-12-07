@@ -6,6 +6,7 @@ import joblib
 import shap
 import matplotlib
 from IPython import get_ipython
+from PIL import Image
 
 model = joblib.load("rta_model_deploy3.joblib")
 encoder = joblib.load("ordinal_encoder2.joblib")
@@ -90,8 +91,10 @@ def main():
               shap.initjs()
               shap_values = shap.TreeExplainer(model).shap_values(pred_arr)
               st.write(f"For prediction {prediction}") 
-              shap.force_plot(shap.TreeExplainer(model).expected_value[0], shap_values[0], pred_arr, feature_names=features)
-              st.pyplot()
+              shap.force_plot(shap.TreeExplainer(model).expected_value[0], shap_values[0],
+                              pred_arr, feature_names=features, matplotlib=True,show=False).savefig("pred_force_plot.jpg")
+              plt.show()
+              
 
 # post the image of the accident
 st.image("vllkyt19n98psusds8.jpg", use_column_width=True)
