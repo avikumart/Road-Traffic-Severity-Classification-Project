@@ -93,6 +93,8 @@ def main():
               st.write(f"For prediction {prediction}") 
               shap.force_plot(shap.TreeExplainer(model).expected_value[0], shap_values[0],
                               pred_arr, feature_names=features, matplotlib=True,show=False).savefig("pred_force_plot.jpg", bbox_inches='tight')
+              img = Image.open("pred_force_plot.jpg")
+              st.image(img, caption='Model explanation using shap')
               
 
 # post the image of the accident
