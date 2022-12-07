@@ -97,8 +97,9 @@ def main():
               st.image(img, caption='Model explanation using shap')
               
               st.write("Developed By: Avi kumar Talaviya")
-              st.markdown("""Reach out to me on: [Twitter](https://twitter.com/avikumart_)
-              [Linkedin](https://www.linkedin.com/in/avi-kumar-talaviya-739153147/)
+              st.markdown("""Reach out to me on: [Twitter](https://twitter.com/avikumart_) |
+              [Linkedin](https://www.linkedin.com/in/avi-kumar-talaviya-739153147/) |
+              [Kaggle](https://www.kaggle.com/avikumart) 
               """)
               
 
