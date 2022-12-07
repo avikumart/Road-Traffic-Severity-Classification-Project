@@ -10,6 +10,8 @@ from IPython import get_ipython
 model = joblib.load("rta_model_deploy3.joblib")
 encoder = joblib.load("ordinal_encoder2.joblib")
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 # 1: serious injury, 2: Slight injury, 0: Fatal Injury
 
 st.set_page_config(page_title="Accident Severity Prediction App",
