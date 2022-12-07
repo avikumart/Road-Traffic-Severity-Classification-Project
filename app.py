@@ -82,6 +82,11 @@ def main():
               else:
                      st.write(f"The severity prediciton is slight injury")
                   
+      st.subheader("Explainable AI (XAI) to understand predictions")  
+      shap.initjs()
+      shap_values = shap.TreeExplainer(model).shap_values(pred_arr)
+      st.write(f"For prediction {prediction}") 
+      shap.force_plot(shap.TreeExplainer(model).expected_value[0], shap_values[0], pred_arr, feature_names=features)
 
 # post the image of the accident
 st.image("vllkyt19n98psusds8.jpg", use_column_width=True)
@@ -109,11 +114,7 @@ st.markdown("Please find GitHub repository link of project: [Click Here](https:/
 if __name__ == '__main__':
    main()
     
-   st.subheader("Explainable AI (XAI) to understand predictions")  
-   shap.initjs()
-   shap_values = shap.TreeExplainer(model).shap_values(pred_arr)
-   st.write(f"For prediction {prediction}") 
-   shap.force_plot(shap.TreeExplainer(model).expected_value, shap_values, pred_arr, feature_names=features)
+   
                 
     
                      
