@@ -3,6 +3,7 @@ import numpy as np
 import sklearn
 import streamlit as st
 import joblib
+import shap
 
 model = joblib.load("rta_model_deploy3.joblib")
 encoder = joblib.load("ordinal_encoder2.joblib")
@@ -80,6 +81,7 @@ def main():
                      st.write(f"The severity prediction is serious injury")
               else:
                      st.write(f"The severity prediciton is slight injury")
+                  
 
 # post the image of the accident
 st.image("vllkyt19n98psusds8.jpg", use_column_width=True)
@@ -106,6 +108,13 @@ st.markdown("Please find GitHub repository link of project: [Click Here](https:/
                   
 if __name__ == '__main__':
    main()
+    
+   st.subheader("Explainable AI (XAI) to understand predictions")  
+   shap.initjs()
+   shap_values = shap.TreeExplainer(model).shap_values(pred_arr)
+   st.write(f"For prediction {prediction}") 
+   shap.force_plot(shap.TreeExplainer(model).expected_value, shap_values, pred_arr, feature_names=features)
+                
     
                      
               
