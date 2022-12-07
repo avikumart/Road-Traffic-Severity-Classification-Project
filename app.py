@@ -5,7 +5,7 @@ import streamlit as st
 import joblib
 import shap
 import matplotlib
-import ipython
+from IPython import get_ipython
 
 model = joblib.load("rta_model_deploy3.joblib")
 encoder = joblib.load("ordinal_encoder2.joblib")
