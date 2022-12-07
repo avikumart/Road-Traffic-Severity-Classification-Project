@@ -86,7 +86,7 @@ def main():
               shap.initjs()
               shap_values = shap.TreeExplainer(model).shap_values(pred_arr)
               st.write(f"For prediction {prediction}") 
-              shap.force_plot(shap.TreeExplainer(model).expected_value[0], shap_values[0], pred_arr, feature_names=features)
+              st.pyplot(shap.force_plot(shap.TreeExplainer(model).expected_value[0], shap_values[0], pred_arr, feature_names=features))
 
 # post the image of the accident
 st.image("vllkyt19n98psusds8.jpg", use_column_width=True)
