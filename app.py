@@ -4,6 +4,7 @@ import sklearn
 import streamlit as st
 import joblib
 import shap
+import matplotlib
 
 model = joblib.load("rta_model_deploy3.joblib")
 encoder = joblib.load("ordinal_encoder2.joblib")
