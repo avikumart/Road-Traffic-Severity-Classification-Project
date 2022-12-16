@@ -104,7 +104,10 @@ def main():
               
 
 # post the image of the accident
-st.image("vllkyt19n98psusds8.jpg", use_column_width=True)
+
+a,b,c = st.columns[0.2,0.6,0.2]
+with b:
+  st.image("vllkyt19n98psusds8.jpg", use_column_width=True)
 
 
 # description about the project and code files            
