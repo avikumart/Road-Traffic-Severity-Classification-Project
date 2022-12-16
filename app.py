@@ -105,7 +105,7 @@ def main():
 
 # post the image of the accident
 
-a,b,c = st.columns[0.2,0.6,0.2]
+a,b,c = st.columns([0.2,0.6,0.2])
 with b:
   st.image("vllkyt19n98psusds8.jpg", use_column_width=True)
 
