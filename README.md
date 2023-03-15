@@ -11,6 +11,10 @@ This is a multiclass classification project to classify severity of road acciden
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://road-traffic-severity-prediction.streamlit.app/)
 
+### Published article on Analytics Vidhya
+
+**Link:** [Click here](https://www.analyticsvidhya.com/blog/2023/01/machine-learning-solution-predicting-road-accident-severity/)
+
 ### Tasks and techniques used:
 
 **1. Exploratory data analysis**
