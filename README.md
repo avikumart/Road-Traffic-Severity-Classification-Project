@@ -11,6 +11,10 @@ This is a multiclass classification project to classify severity of road acciden
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://road-traffic-severity-prediction.streamlit.app/)
 
+### Collaboration with StackUp developer community:
+
+Link to the campaign: [Click Here](https://app.stackup.dev/campaign_page/python-end-to-end-multiclass-classification-project)
+
 ### Web app screenshots:
 
 ![image](https://user-images.githubusercontent.com/88608935/227510381-e8d6c1c1-a5ab-4869-8e02-e20a278b64cc.png)
