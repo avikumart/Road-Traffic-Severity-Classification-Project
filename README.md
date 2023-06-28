@@ -11,6 +11,11 @@ This is a multiclass classification project to classify severity of road acciden
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://road-traffic-severity-prediction.streamlit.app/)
 
+
+### Published article on Analytics Vidhya
+
+**Link:** [Click here](https://www.analyticsvidhya.com/blog/2023/01/machine-learning-solution-predicting-road-accident-severity/)
+
 ### Collaboration with StackUp developer community:
 
 Link to the campaign: [Click Here](https://app.stackup.dev/campaign_page/python-end-to-end-multiclass-classification-project)
@@ -23,11 +28,6 @@ Link to the campaign: [Click Here](https://app.stackup.dev/campaign_page/python-
 
 ![image](https://user-images.githubusercontent.com/88608935/227510607-81f35fda-ec19-4eb1-b886-374f4bbda449.png)
 
-
-
-### Published article on Analytics Vidhya
-
-**Link:** [Click here](https://www.analyticsvidhya.com/blog/2023/01/machine-learning-solution-predicting-road-accident-severity/)
 
 ### Tasks and techniques used:
 
